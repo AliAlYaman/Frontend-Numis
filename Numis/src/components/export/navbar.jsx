@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import {
-  Button,
   Dialog,
   DialogPanel,
   Disclosure,
@@ -30,8 +29,7 @@ import {
 import {
   ChevronDownIcon,
 } from "@heroicons/react/20/solid";
-import { faSurprise } from "@fortawesome/free-solid-svg-icons";
-import { IconBadge, IconBrandStocktwits, IconBrandStorybook, IconBrandStorytel, IconCurrencyDollar, IconCurrencyEuroOff, IconCurrencyLira, IconLayoutSidebarRightExpandFilled, IconNews, IconReportMoney } from "@tabler/icons-react";
+import { IconBadge, IconBrandStorytel, IconCurrencyDollar,  IconNews, IconReportMoney } from "@tabler/icons-react";
 const products = [
   {
     name: "Analytics",
@@ -164,7 +162,7 @@ export default function Navbar() {
           >
             <span className="sr-only">Open main menu</span>
             {mobileMenuOpen ? null:
-            <Bars3Icon aria-hidden="true" className="h-6 w-6  " /> }
+            <Bars3Icon aria-hidden="true" className="h-6 w-6  text-white" /> }
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12 ">
@@ -357,13 +355,13 @@ export default function Navbar() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-3/5 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-3/5 overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 border-2 rounded-r-none border-purple-500 rounded-xl">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="src\assets\robot.png"
                 className="h-8 w-auto"
               />
             </a>
@@ -373,14 +371,14 @@ export default function Navbar() {
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+              <XMarkIcon aria-hidden="true" className="h-6 w-6 text-white" />
             </button>
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-white hover:bg-gray-500">
                     Products
                     <ChevronDownIcon
                       aria-hidden="true"
@@ -393,7 +391,7 @@ export default function Navbar() {
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-500"
                       >
                         {item.name}
                       </DisclosureButton>
@@ -402,19 +400,19 @@ export default function Navbar() {
                 </Disclosure>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-500"
                 >
                   Features
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-500"
                 >
                   Marketplace
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-500"
                 >
                   Company
                 </a>
@@ -422,9 +420,9 @@ export default function Navbar() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-500"
                 >
-                  Log in
+                  Get Started
                 </a>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import './App.css'
+import LandingPage from './components/export/landing-page'
 import Navbar from './components/export/navbar'
-import Spline from '@splinetool/react-spline'
-import { SpotlightPreview } from './components/export/Spotlight'
+import Footer from './components/export/footer';
 function App() {
 
   return (
@@ -10,6 +10,8 @@ function App() {
     <Navbar >
       </Navbar>
     </div>
+    <LandingPage></LandingPage>
+      <Footer/>
     </>
   )
 }
