@@ -14,7 +14,7 @@ const TradingViewWidget = () => {
     "width": "1150",
           "height": "680",
         "autosize": true,
-        "symbol": "NASDAQ:AAPL",
+        "symbol": "OANDA:XAUUSD",
         "interval": "60",
         "timezone": "Etc/UTC",
         "theme": "dark",

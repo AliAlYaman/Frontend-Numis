@@ -149,7 +149,7 @@ export default function Navbar() {
         className="mx-auto flex max-w-8xl items-center justify-between  align-middle lg:px-4  h-8 p-8 text-white "
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/home" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img alt="" src="src\assets\logo-color.png" className="h-9 w-9" />
           </a>
@@ -340,13 +340,16 @@ export default function Navbar() {
           </Popover>
           
         </PopoverGroup>
+        
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-5  text-center">
+          <a href="/get-started">
           <button className="p-[3px] relative">
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
             <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
               Get Started
             </div>
           </button>
+          </a>
         </div>
       </nav>
       <Dialog
@@ -357,7 +360,7 @@ export default function Navbar() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-3/5 overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 border-2 rounded-r-none border-purple-500 rounded-xl">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/home" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
@@ -393,7 +396,7 @@ export default function Navbar() {
                         href={item.href}
                         className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-500"
                       >
-                        {item.name}
+                        - {item.name}
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>
@@ -419,7 +422,7 @@ export default function Navbar() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="/get-started"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-500"
                 >
                   Get Started
